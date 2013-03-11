@@ -1,20 +1,4 @@
 <?php
- /*
- * Project:		EQdkp-Plus
- * License:		Creative Commons - Attribution-Noncommercial-Share Alike 3.0 Unported
- * Link:		http://creativecommons.org/licenses/by-nc-sa/3.0/
- * -----------------------------------------------------------------------
- * Began:		2009
- * Date:		$Date$
- * -----------------------------------------------------------------------
- * @author		$Author$
- * @copyright	2006-2011 EQdkp-Plus Developer Team
- * @link		http://eqdkp-plus.com
- * @package		eqdkp-plus
- * @version		$Rev$
- * 
- * $Id$
- */
 
 if ( !defined('EQDKP_INC') ){
 	header('HTTP/1.0 404 Not Found');exit;
@@ -24,12 +8,14 @@ $german_array = array(
 		0 => 'Unbekannt',
 		1 => 'Krieger',
 		2 => 'Paladin',
+		8 => 'Späher',
 		3 => 'Heiler',
-		4 => 'Beschwörer',
-		5 => 'Magier',
 		6 => 'Behüter',
+		5 => 'Magier',
+		4 => 'Beschwörer',
 		7 => 'Psioniker',
-		8 => 'Späher',		
+		9 => 'Barde',
+			
 	),
 	'races' => array(
 			'Unknown',
@@ -51,7 +37,46 @@ $german_array = array(
 		'uc_gender'						=> 'Geschlecht',
 		'uc_male'						=> 'Männlich',
 		'uc_female'						=> 'Weiblich',
+		'uc_branch'                     => 'Archetyp-Zweig',
 		'uc_guild'						=> 'Gilde',
+		
+        // Archetyp-Zweig
+        
+        'uc_abranch_0' => '-',
+        'uc_abranch_1' => 'Wächter',
+        'uc_abranch_2' => 'Champion',
+        'uc_abranch_3' => 'Templer',
+        'uc_abranch_4' => 'Kreuzritter',
+        'uc_abranch_5' => 'Jäger',
+        'uc_abranch_6' => 'Ranger',
+        'uc_abranch_7' => 'Priester',
+        'uc_abranch_8' => 'Kleriker',
+        'uc_abranch_9' => 'Animist',
+        'uc_abranch_10' => 'Druide',
+        'uc_abranch_11' => 'Erzmagier',
+        'uc_abranch_12' => 'Zauberer',
+        'uc_abranch_13' => 'Dämonist',
+        'uc_abranch_14' => 'Orakel',
+        'uc_abranch_15' => 'Seher',
+        'uc_abranch_16' => 'Troubadour',
+        'uc_abranch_17' => 'Minnesänger',
+        'uc_abranch_18' => 'Eroberer',
+        'uc_abranch_19' => 'Grobian',
+        'uc_abranch_20' => 'Rächer',
+        'uc_abranch_21' => 'Plünderer',
+        'uc_abranch_22' => 'Saboteur',
+        'uc_abranch_23' => 'Kopfjäger',
+        'uc_abranch_24' => 'Inquisitor',
+        'uc_abranch_25' => 'Ketzer',
+        'uc_abranch_26' => 'Schamane',
+        'uc_abranch_27' => 'Theurg',
+        'uc_abranch_28' => 'Hexer',
+        'uc_abranch_29' => 'Verderber',
+        'uc_abranch_30' => 'Savant',
+        'uc_abranch_31' => 'Mentalist',
+        'uc_abranch_32' => 'Okkultist',
+        'uc_abranch_33' => 'Tambour',
+        'uc_abranch_34' => 'Chanter',        
 	),
 );
 ?>
