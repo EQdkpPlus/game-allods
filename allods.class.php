@@ -21,7 +21,7 @@ if(!class_exists('allods')) {
 		protected $lang_file	= array();
 		protected $path			= '';
 		public $lang			= false;
-		public $version			= '1.2.1';
+		public $version			= '5.0';
 		/**
 		* Initialises filters
 		*
@@ -56,15 +56,16 @@ if(!class_exists('allods')) {
 		public function get_OnChangeInfos($install=false){
 			//classcolors
 			$info['class_color'] = array(
-				1 => '#bf8040',
-				2 => '#efffbf',
-				3 => '#ffcf3f',
-				4 => '#ff3f3f',
-				5 => '#7f9fff',
-				6 => '#ff8000',
-				7 => '#ff7fff',
-				8 => '#80df20',
-				9 => '#7fffff',
+				1	=> '#bf8040',
+				2	=> '#efffbf',
+				3	=> '#ffcf3f',
+				4	=> '#ff3f3f',
+				5	=> '#7f9fff',
+				6	=> '#ff8000',
+				7	=> '#ff7fff',
+				8	=> '#80df20',
+				9	=> '#7fffff',
+				10	=> '#869CAE',
 			);
 
 			//Do this SQL Query NOT if the Eqdkp is installed -> only @ the first install
