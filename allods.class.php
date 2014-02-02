@@ -21,7 +21,7 @@ if(!class_exists('allods')) {
 		protected $lang_file	= array();
 		protected $path			= '';
 		public $lang			= false;
-		public $version			= '5.0';
+		public $version			= '5.0.1';
 		/**
 		* Initialises filters
 		*
@@ -40,7 +40,7 @@ if(!class_exists('allods')) {
 				$this->filters[$lang] = array_merge($this->filters[$lang], array(
 					array('name' => '-----------', 'value' => false),
 					array('name' => $this->glang('plate'), 'value' => 'class:1,2,3'),
-					array('name' => $this->glang('leather'), 'value' => 'class:1,2,3,6,7,8,9'),
+					array('name' => $this->glang('leather'), 'value' => 'class:1,2,3,6,7,8,9,10'),
 					array('name' => $this->glang('cloth'), 'value' => 'class:3,4,5,6,7'),
 				));
 			}
