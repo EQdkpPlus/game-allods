@@ -19,13 +19,13 @@ $english_array =  array(
 	),
 	
 	'races' => array(
-		'Unknown',
-		'Kanians',
-		'Elves',
-		'Gibberlings',
-		'Xadaganians',
-		'Orcs',
-		'Arisen'
+		0	=> 'Unknown',
+		1	=> 'Kanians',
+		2	=> 'Elves',
+		3	=> 'Gibberlings',
+		4	=> 'Xadaganians',
+		5	=> 'Orcs',
+		6	=> 'Arisen'
 	),
 
 	'lang' => array(

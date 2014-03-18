@@ -18,13 +18,13 @@ $german_array = array(
 		10	=> 'Ingenieur',
 	),
 	'races' => array(
-		'Unknown',
-		'Kanians',
-		'Elfen',
-		'Gibberlings',
-		'Xadaganians',
-		'Orks',
-		'Arisen'
+		0	=> 'Unknown',
+		1	=> 'Kanians',
+		2	=> 'Elfen',
+		3	=> 'Gibberlings',
+		4	=> 'Xadaganians',
+		5	=> 'Orks',
+		6	=> 'Arisen'
 	),
 
 	'lang' => array(
