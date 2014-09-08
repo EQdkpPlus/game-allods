@@ -29,17 +29,24 @@ $english_array =  array(
 	),
 
 	'lang' => array(
-		'allods'		=> 'Allods Online',
-		'plate'			=> 'Plate',
-		'cloth'			=> 'Cloth',
-		'leather'		=> 'Leather',
+		'allods'						=> 'Allods Online',
+		'plate'							=> 'Plate',
+		'cloth'							=> 'Cloth',
+		'leather'						=> 'Leather',
 
 		// Profile information
-		'uc_gender'		=> 'Gender',
-		'uc_male'		=> 'Male',
-		'uc_female'		=> 'Female',
-		'uc_branch'		=> 'Archtype-Branch',
-		'uc_guild'		=> 'Guild',
+		'uc_gender'						=> 'Gender',
+		'uc_male'						=> 'Male',
+		'uc_female'						=> 'Female',
+		'uc_branch'						=> 'Archtype-Branch',
+		'uc_guild'						=> 'Guild',
+		'uc_race'						=> 'Race',
+		'uc_class'						=> 'Class',
+
+		// Admin Settings
+		'core_sett_fs_gamesettings'		=> 'Allods Online Settings',
+		'uc_faction'					=> 'Faction',
+		'uc_faction_help'				=> 'Select the default faction',
 	
 		// Archetype-Branch
 		'uc_abranch_0'	=> '-',

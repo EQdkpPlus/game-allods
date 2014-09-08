@@ -88,12 +88,12 @@ if(!class_exists('allods')) {
 					'options'		=> array('Male' => 'uc_male', 'Female' => 'uc_female'),
 					'undeletable'	=> true,
 				),
-				'atbranch'    => array(
-					'type'          => 'dropdown',
-					'category'      => 'character',
-					'lang'          => 'uc_branch',
-					'options'       => array('-' => 'uc_abranch_0', 'Wächter' => 'uc_abranch_1', 'Champion' => 'uc_abranch_2', 'Templer' => 'uc_abranch_3', 'Kreuzritter' => 'uc_abranch_4', 'Jäger' => 'uc_abranch_5', 'Ranger' => 'uc_abranch_6', 'Priester' => 'uc_abranch_7', 'Kleriker' => 'uc_abranch_8', 'Animist' => 'uc_abranch_9', 'Druide' => 'uc_abranch_10', 'Erzmagier' => 'uc_abranch_11', 'Zauberer' => 'uc_abranch_12', 'Dämonist' => 'uc_abranch_13', 'Orakel' => 'uc_abranch_14', 'Seher' => 'uc_abranch_15', 'Troubadour' => 'uc_abranch_16', 'Minnesänger' => 'uc_abranch_17', 'Eroberer' => 'uc_abranch_18', 'Grobian' => 'uc_abranch_19', 'Rächer' => 'uc_abranch_20', 'Plünderer' => 'uc_abranch_21', 'Saboteur' => 'uc_abranch_22', 'Kopfjäger' => 'uc_abranch_23', 'Inquisitor' => 'uc_abranch_24', 'Ketzer' => 'uc_abranch_25', 'Schamane' => 'uc_abranch_26', 'Theurg' => 'uc_abranch_27', 'Hexer' => 'uc_abranch_28', 'Verderber' => 'uc_abranch_29', 'Savant' => 'uc_abranch_30', 'Mentalist' => 'uc_abranch_31', 'Okkultist' => 'uc_abranch_32', 'Tambour' => 'uc_abranch_33', 'Chanter' => 'uc_abranch_34'),
-					'undeletable'   => true,
+				'atbranch'	=> array(
+					'type'			=> 'dropdown',
+					'category'		=> 'character',
+					'lang'			=> 'uc_branch',
+					'options'		=> array('-' => 'uc_abranch_0', 'Wächter' => 'uc_abranch_1', 'Champion' => 'uc_abranch_2', 'Templer' => 'uc_abranch_3', 'Kreuzritter' => 'uc_abranch_4', 'Jäger' => 'uc_abranch_5', 'Ranger' => 'uc_abranch_6', 'Priester' => 'uc_abranch_7', 'Kleriker' => 'uc_abranch_8', 'Animist' => 'uc_abranch_9', 'Druide' => 'uc_abranch_10', 'Erzmagier' => 'uc_abranch_11', 'Zauberer' => 'uc_abranch_12', 'Dämonist' => 'uc_abranch_13', 'Orakel' => 'uc_abranch_14', 'Seher' => 'uc_abranch_15', 'Troubadour' => 'uc_abranch_16', 'Minnesänger' => 'uc_abranch_17', 'Eroberer' => 'uc_abranch_18', 'Grobian' => 'uc_abranch_19', 'Rächer' => 'uc_abranch_20', 'Plünderer' => 'uc_abranch_21', 'Saboteur' => 'uc_abranch_22', 'Kopfjäger' => 'uc_abranch_23', 'Inquisitor' => 'uc_abranch_24', 'Ketzer' => 'uc_abranch_25', 'Schamane' => 'uc_abranch_26', 'Theurg' => 'uc_abranch_27', 'Hexer' => 'uc_abranch_28', 'Verderber' => 'uc_abranch_29', 'Savant' => 'uc_abranch_30', 'Mentalist' => 'uc_abranch_31', 'Okkultist' => 'uc_abranch_32', 'Tambour' => 'uc_abranch_33', 'Chanter' => 'uc_abranch_34'),
+					'undeletable'	=> true,
 				),
 				'guild'	=> array(
 					'type'			=> 'text',
@@ -104,22 +104,6 @@ if(!class_exists('allods')) {
 				),
 			);
 			return $xml_fields;
-		}
-
-		public function admin_settings() {
-			$settingsdata_admin = array(
-				'game' => array(
-					'allodssettings' => array(
-						'allods_faction'	=> array(
-							'lang'		=> 'allods_faction',
-							'fieldtype'	=> 'dropdown',
-							'size'		=> '1',
-							'options'	=> $this->game->get('factions'),
-						),
-					)
-				)
-			);
-			return $settingsdata_admin;
 		}
 
 		protected function load_filters($langs){
