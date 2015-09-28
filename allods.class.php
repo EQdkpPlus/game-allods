@@ -60,6 +60,7 @@ if(!class_exists('allods')) {
 						4 	=> 'all',		// Xadaganians
 						5 	=> 'all',		// Orcs
 						6 	=> 'all',		// Arisen
+						7	=> 'all',		// Pridens
 					),
 				),
 			),
