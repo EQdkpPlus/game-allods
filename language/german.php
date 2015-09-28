@@ -43,7 +43,8 @@ $german_array = array(
 		3	=> 'Gibberlings',
 		4	=> 'Xadaganians',
 		5	=> 'Orks',
-		6	=> 'Arisen'
+		6	=> 'Arisen',
+		7	=> 'Biestlinge',
 	),
 
 	'lang' => array(
