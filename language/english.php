@@ -44,7 +44,8 @@ $english_array =  array(
 		3	=> 'Gibberlings',
 		4	=> 'Xadaganians',
 		5	=> 'Orcs',
-		6	=> 'Arisen'
+		6	=> 'Arisen',
+		7	=> 'Pridens',
 	),
 
 	'lang' => array(
