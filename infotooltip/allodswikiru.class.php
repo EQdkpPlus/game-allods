@@ -111,29 +111,33 @@ if(!class_exists('allodswikiru')) {
 		}
 
 		protected function getItemData($item_id, $lang, $itemname='', $type='items'){
+
 			$item = array('id' => $item_id);
 			if(!$item_id) return null;
 			
-			$url = "http://".$lang.".allodswiki.ru/api.php/item?version=2&name=".urlencode($itemname);		
+			$url = "http://".$lang.".allodswiki.ru/api.php/item/".$item_id;		
 			
 			$item['link'] = $url;
-			$itemdata = $this->puf->fetch($item['link']);		
-			$arrTooltipData = json_decode($itemdata);
-			if ($arrTooltipData && isset($arrTooltipData->id) && $arrTooltipData->name != ""){
-				$url = "http://".$lang.".allodswiki.ru/api.php/Item/".$arrTooltipData->id;
+			$itemdata = $this->puf->fetch($item['link']);
+			$itemdata = substr($itemdata, strpos($itemdata, "{"));
+			$arrTooltipData = json_decode(trim($itemdata));
+
+			if ($arrTooltipData && !isset($arrTooltipData->error)){
+				$url = "http://".$lang.".allodswiki.ru/api.php/item/?version=2&id=".$item_id;
 				$itemdata = $this->puf->fetch($url);
+				$itemdata = substr($itemdata, strpos($itemdata, "{"));
 				$arrData = json_decode($itemdata);
 				
-				$item['icon'] = str_replace(".png", "", $arrData->texture);
-				$item['color'] = $arrData->quality;
+				$item['icon'] = str_replace(".png", "", $arrTooltipData->texture);
+				$item['color'] = $arrTooltipData->quality;
 
 				$template_html = trim(file_get_contents($this->root_path.'games/allods/infotooltip/templates/allods_popup.tpl'));
-				$html = str_replace('src="/images/', 'http://eu.allodswiki.ru/images/', $arrTooltipData->html);
+				$html = str_replace('src="/images/', 'http://eu.allodswiki.ru/images/', $arrData->html);
 				$template_html = str_replace('{ITEM_HTML}', $html, $template_html);
 				$item['html'] = $template_html;
 				$item['lang'] = $lang;
 				$item['name'] = $arrTooltipData->name;
-				
+
 			} else {
 				$item['baditem'] = true;
 			}
