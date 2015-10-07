@@ -26,7 +26,7 @@ if ( !defined('EQDKP_INC') ){
 if(!class_exists('allods')) {
 	class allods extends game_generic {
 		protected static $apiLevel	= 20;
-		public $version				= '6.0.1';
+		public $version				= '6.0.2';
 		protected $this_game		= 'allods';
 		protected $types			= array('classes', 'races', 'filters');
 		protected $classes			= array();
