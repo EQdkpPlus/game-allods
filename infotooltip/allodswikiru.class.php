@@ -61,10 +61,7 @@ if(!class_exists('allodswikiru')) {
 											'default' => ((isset($g_settings[$this->config['game']]['default_icon'])) ? $g_settings[$this->config['game']]['default_icon'] : ''),
 				),
 			);
-			$g_lang = array(
-				'allods' => array('en' => 'en_US', 'de' => 'de_DE', 'fr' => 'fr_FR', 'pts' => 'ru_RU'),
-			);
-			$this->av_langs = ((isset($g_lang[$this->config['game']])) ? $g_lang[$this->config['game']] : '');
+			$this->av_langs = array('en' => 'en_US', 'de' => 'de_DE', 'fr' => 'fr_FR', 'ru' => 'ru_RU');
 		}
 
 		public function __destruct(){
